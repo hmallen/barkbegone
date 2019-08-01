@@ -5,12 +5,19 @@
 #define VIBE_DURATION_DEFAULT 3
 #define MQTT_TOPIC_SUB "home/remote/barkbegone"
 
-void setup() {
-  // put your setup code here, to run once:
+EspMQTTClient client(
+  WIFI_NETWORK,
+  WIFI_PASS,
+  MQTT_SERVER,
+  MQTT_USER,
+  MQTT_PASS,
+  MQTT_PORT
+);
 
+void setup() {
+  pinMode(VIBE_PIN, OUTPUT);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-
+  //
 }
