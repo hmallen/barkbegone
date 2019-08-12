@@ -1,8 +1,8 @@
 #include "EspMQTTClient.h"
 #include "credentials.h"
 
-#define VIBE_PIN 2
-#define VIBE_DURATION_DEFAULT 3
+#define BUZZ_PIN 2
+#define BUZZ_DURATION_DEFAULT 3
 #define MQTT_TOPIC_SUB "home/remote/barkbegone"
 
 EspMQTTClient client(
@@ -15,7 +15,7 @@ EspMQTTClient client(
 );
 
 void setup() {
-  pinMode(VIBE_PIN, OUTPUT);
+  pinMode(BUZZ_PIN, OUTPUT);
 }
 
 void loop() {
