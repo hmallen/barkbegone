@@ -1,0 +1,220 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Transistor_BJT:PN2222A Q1
+U 1 1 5D5153AE
+P 4850 3400
+F 0 "Q1" H 5040 3446 50  0000 L CNN
+F 1 "PN2222A" H 5040 3355 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5050 3325 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/PN/PN2222A.pdf" H 4850 3400 50  0001 L CNN
+	1    4850 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4002 D1
+U 1 1 5D515F63
+P 5750 2850
+F 0 "D1" V 5704 2929 50  0000 L CNN
+F 1 "1N4002" V 5795 2929 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5750 2675 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5750 2850 50  0001 C CNN
+	1    5750 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L Motor:Motor_DC_ALT M1
+U 1 1 5D517914
+P 4950 2800
+F 0 "M1" H 5097 2796 50  0000 L CNN
+F 1 "Vibration Motor" H 5097 2705 50  0000 L CNN
+F 2 "" H 4950 2710 50  0001 C CNN
+F 3 "~" H 4950 2710 50  0001 C CNN
+	1    4950 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 5D51A32B
+P 6250 2850
+F 0 "C2" H 6342 2896 50  0000 L CNN
+F 1 "0.1uF" H 6342 2805 50  0000 L CNN
+F 2 "" H 6250 2850 50  0001 C CNN
+F 3 "~" H 6250 2850 50  0001 C CNN
+	1    6250 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5D522F84
+P 4300 3900
+F 0 "#PWR02" H 4300 3650 50  0001 C CNN
+F 1 "GND" H 4305 3727 50  0000 C CNN
+F 2 "" H 4300 3900 50  0001 C CNN
+F 3 "" H 4300 3900 50  0001 C CNN
+	1    4300 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R1
+U 1 1 5D5201A3
+P 2150 3500
+F 0 "R1" V 2355 3500 50  0000 C CNN
+F 1 "10k" V 2264 3500 50  0000 C CNN
+F 2 "" H 2150 3500 50  0001 C CNN
+F 3 "~" H 2150 3500 50  0001 C CNN
+	1    2150 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:CP1_Small C1
+U 1 1 5D51B249
+P 1900 3850
+F 0 "C1" H 1991 3896 50  0000 L CNN
+F 1 "1000uF" H 1991 3805 50  0000 L CNN
+F 2 "" H 1900 3850 50  0001 C CNN
+F 3 "~" H 1900 3850 50  0001 C CNN
+	1    1900 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5D540767
+P 1900 3950
+F 0 "#PWR0101" H 1900 3700 50  0001 C CNN
+F 1 "GND" H 1905 3777 50  0000 C CNN
+F 2 "" H 1900 3950 50  0001 C CNN
+F 3 "" H 1900 3950 50  0001 C CNN
+	1    1900 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR01
+U 1 1 5D521FB2
+P 1750 3600
+F 0 "#PWR01" H 1750 3450 50  0001 C CNN
+F 1 "+3.3V" V 1765 3728 50  0000 L CNN
+F 2 "" H 1750 3600 50  0001 C CNN
+F 3 "" H 1750 3600 50  0001 C CNN
+	1    1750 3600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2250 3600 2050 3600
+Wire Wire Line
+	2250 3400 2050 3400
+Wire Wire Line
+	2050 3400 2050 3500
+Wire Wire Line
+	2050 3600 2050 3500
+Connection ~ 2050 3500
+$Comp
+L Device:R_Small_US R2
+U 1 1 5D589304
+P 4550 3400
+F 0 "R2" V 4345 3400 50  0000 C CNN
+F 1 "1.5k" V 4436 3400 50  0000 C CNN
+F 2 "" H 4550 3400 50  0001 C CNN
+F 3 "~" H 4550 3400 50  0001 C CNN
+	1    4550 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5D595806
+P 4950 3600
+F 0 "#PWR0102" H 4950 3350 50  0001 C CNN
+F 1 "GND" H 4955 3427 50  0000 C CNN
+F 2 "" H 4950 3600 50  0001 C CNN
+F 3 "" H 4950 3600 50  0001 C CNN
+	1    4950 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L ESP8266:ESP-01v090 U1
+U 1 1 5D51EA3A
+P 3200 3450
+F 0 "U1" H 3200 3965 50  0000 C CNN
+F 1 "ESP-01S" H 3200 3874 50  0000 C CNN
+F 2 "" H 3200 3450 50  0001 C CNN
+F 3 "http://l0l.org.uk/2014/12/esp8266-modules-hardware-guide-gotta-catch-em-all/" H 3200 3450 50  0001 C CNN
+	1    3200 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 2600 5750 2700
+Wire Wire Line
+	6250 2600 6250 2750
+Wire Wire Line
+	6250 2600 5750 2600
+Connection ~ 5750 2600
+Wire Wire Line
+	5750 2600 4950 2600
+$Comp
+L power:+3.3V #PWR0103
+U 1 1 5D5A0B80
+P 4950 2300
+F 0 "#PWR0103" H 4950 2150 50  0001 C CNN
+F 1 "+3.3V" H 4965 2473 50  0000 C CNN
+F 2 "" H 4950 2300 50  0001 C CNN
+F 3 "" H 4950 2300 50  0001 C CNN
+	1    4950 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R3
+U 1 1 5D52137E
+P 4950 2400
+F 0 "R3" H 5018 2446 50  0000 L CNN
+F 1 "33" H 5018 2355 50  0000 L CNN
+F 2 "" H 4950 2400 50  0001 C CNN
+F 3 "~" H 4950 2400 50  0001 C CNN
+	1    4950 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 2500 4950 2600
+Connection ~ 4950 2600
+Wire Wire Line
+	4450 3400 4150 3400
+Wire Wire Line
+	4150 3300 4300 3300
+Wire Wire Line
+	4300 3300 4300 3900
+NoConn ~ 4150 3500
+NoConn ~ 4150 3600
+NoConn ~ 2250 3300
+Wire Wire Line
+	4950 3100 4950 3200
+Wire Wire Line
+	6250 2950 6250 3100
+Wire Wire Line
+	6250 3100 5750 3100
+Connection ~ 4950 3100
+Wire Wire Line
+	5750 3000 5750 3100
+Connection ~ 5750 3100
+Wire Wire Line
+	5750 3100 4950 3100
+Wire Wire Line
+	2050 3600 1900 3600
+Connection ~ 2050 3600
+Wire Wire Line
+	1900 3600 1900 3750
+Connection ~ 1900 3600
+Wire Wire Line
+	1900 3600 1750 3600
+$EndSCHEMATC

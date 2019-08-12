@@ -1,0 +1,71 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Transistor_BJT:PN2222A Q1
+U 1 1 5D5153AE
+P 2550 1750
+F 0 "Q1" H 2740 1796 50  0000 L CNN
+F 1 "PN2222A" H 2740 1705 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2750 1675 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/PN/PN2222A.pdf" H 2550 1750 50  0001 L CNN
+	1    2550 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4002 D1
+U 1 1 5D515F63
+P 3450 2500
+F 0 "D1" H 3450 2716 50  0000 C CNN
+F 1 "1N4002" H 3450 2625 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 3450 2325 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 3450 2500 50  0001 C CNN
+	1    3450 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Motor_DC_ALT M1
+U 1 1 5D517914
+P 3950 1850
+F 0 "M1" H 4097 1846 50  0000 L CNN
+F 1 "Vibration Motor" H 4097 1755 50  0000 L CNN
+F 2 "" H 3950 1760 50  0001 C CNN
+F 3 "~" H 3950 1760 50  0001 C CNN
+	1    3950 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 5D51A32B
+P 4500 2700
+F 0 "C2" H 4592 2746 50  0000 L CNN
+F 1 "0.1uF" H 4592 2655 50  0000 L CNN
+F 2 "" H 4500 2700 50  0001 C CNN
+F 3 "~" H 4500 2700 50  0001 C CNN
+	1    4500 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C1
+U 1 1 5D51B249
+P 3400 1500
+F 0 "C1" H 3491 1546 50  0000 L CNN
+F 1 "1000uF" H 3491 1455 50  0000 L CNN
+F 2 "" H 3400 1500 50  0001 C CNN
+F 3 "~" H 3400 1500 50  0001 C CNN
+	1    3400 1500
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
